@@ -9,4 +9,12 @@ Key terms You should know
 8 - Color
 9 - Legend
 10 - Label
-11 - Title
+11 - Grid
+12 - Function
+13 - Method
+14 - Parameters
+15 - Keyword Arguments
+16 - Object-Oriented API
+17 - DPI(Dots per inch)
+18 - Backend
+19 - DPI
