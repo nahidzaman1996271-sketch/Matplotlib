@@ -1,0 +1,12 @@
+Key terms You should know
+1 - Data Point
+2 - X-axis/Y-axis
+3 - Figure
+4 - Axes
+5 - Plot
+6 - Marker
+7 - Line style
+8 - Color
+9 - Legend
+10 - Label
+11 - Title
