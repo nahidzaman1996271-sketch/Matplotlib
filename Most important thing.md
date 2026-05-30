@@ -1,0 +1,8 @@
+## It is the most important thing and the thing is at first you need to write a command to install matplotlib in you IDE and in the below this is the command:
+
+
+
+
+
+#### py -m pip install matplotlib
+
