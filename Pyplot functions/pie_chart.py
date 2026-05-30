@@ -5,4 +5,4 @@ revenue = [3000, 2000, 1500, 1000]
 
 plt.pie(revenue, labels=regions, autopct='%1.1f%%',colors=['gold','skyblue','lightgreen','coral'])
 plt.title('Revenue Contribution by region')
-plt.show()
+plt.show() # this line is used for showing us the whole diagram
