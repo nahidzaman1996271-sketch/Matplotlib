@@ -9,5 +9,6 @@ plt.title('Sample Line Plot')
 plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 
-plt.savefig('line_plot.png',dpi=300,bbox_inches='tight')
+plt.savefig('line_plot.pdf',dpi=300,bbox_inches='tight')
+# u just need to type the format after the folder name
 plt.show()
