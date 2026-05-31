@@ -39,3 +39,44 @@ plt.ylabel('Number of Movies')
 plt.tight_layout()
 plt.savefig('movie_duration_histogram.png')
 plt.show()
+
+release_counts = df['release_year'].value_counts().sort_index()
+plt.figure(figsize=(10,6))
+plt.scatter(release_counts.index, release_counts.values,color='red')
+plt.title('Release Year VS Number of Shows')
+plt.xlabel('Release Year')
+plt.ylabel('Number of Shows')
+plt.tight_layout()
+plt.savefig('release_year_scatter.png')
+plt.show()
+
+country_counts = df['country'].value_counts().head(10)
+plt.figure(figsize=(8,6))
+plt.barh(country_counts.index, country_counts.values, color='teal')
+plt.title('Top 10 Countrys by Number of Shows')
+plt.xlabel('Number of Shows')
+plt.ylabel('Shows')
+plt.tight_layout()
+plt.savefig('top_10_countries.png')
+plt.show()
+
+content_by_year = df.groupby(['release_year','type']).size().unstack().fillna(0)
+
+fig, ax = plt.subplots(1,2, figsize=(12,5))
+
+#first subplot:movies
+ax[0].plot(content_by_year.index, content_by_year['Movie'],color='blue')
+ax[0].set_title('Moive Released Per Year')
+ax[0].set_xlabel('Year')
+ax[0].set_ylabel('Number of Movies')
+
+#Second subplot:movies
+ax[0].plot(content_by_year.index, content_by_year['TV Show'],color='orange')
+ax[0].set_title('TV Show Released Per Year')
+ax[0].set_xlabel('Year')
+ax[0].set_ylabel('Number of TV Shows')
+
+fig.suptitle('Comparison of Movies and TV Shows Released Over Years')
+plt.tight_layout()
+plt.savefig('movies_tv_shows_comparison.png')
+plt.show()
